@@ -19,7 +19,7 @@ namespace Assignment_2._0
 
         public object Answer1 { get; private set; }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             //Calculate the total resistance of a 2 series circuit
             try
