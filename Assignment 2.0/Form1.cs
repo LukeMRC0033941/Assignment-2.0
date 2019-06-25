@@ -34,14 +34,14 @@ namespace Assignment_2._0
             }
             catch
             {
-
+                MessageBox.Show("Type in 2 numbers");
             }
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Calculate the total resistance of a 2 series circuit
+            //Calculate the total resistance of a 3 series circuit
             try
             {
                 double R1, R2, R3, RT;
@@ -60,7 +60,7 @@ namespace Assignment_2._0
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Calculate the total resistance of a 2 series circuit
+            //Calculate the total resistance of a 4 series circuit
             try
             {
                 double R1, R2, R3, R4, RT;
@@ -80,7 +80,7 @@ namespace Assignment_2._0
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //Calculate the total resistance of a 2 series circuit
+            //Calculate the total resistance of a 5 series circuit
             try
             {
                 double R1, R2, R3, R4, R5, RT;
@@ -92,6 +92,88 @@ namespace Assignment_2._0
                 RT = R1 + R2 + R3 + R4;
                 Answer1 = "Total resistance = " + RT;
                 textBox15.Text = Answer1.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Type in 5 numbers");
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Calculate the total resistance of a 2 parallel circuit
+            try
+            {
+                double R1, R2, RT;
+                R1 = Convert.ToDouble(textBox19.Text);
+                R2 = Convert.ToDouble(textBox20.Text);
+                RT = 1 / (1 / R1 + 1 / R2);
+                Answer1 = "Total resistance = " + RT;
+                textBox21.Text = Answer1.ToString();
+
+            }
+            catch
+            {
+                MessageBox.Show("Type in 2 numbers");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //Calculate the total resistance of a 3 parallel circuit
+            try
+            {
+                double R1, R2, R3, RT;
+                R1 = Convert.ToDouble(textBox22.Text);
+                R2 = Convert.ToDouble(textBox23.Text);
+                R3 = Convert.ToDouble(textBox24.Text);
+                RT = 1 / (1 / R1 + 1 / R2 + 1 / R3);
+                Answer1 = "Total resistance = " + RT;
+                textBox25.Text = Answer1.ToString();
+
+            }
+            catch
+            {
+                MessageBox.Show("Type in 3 numbers");
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //Calculate the total resistance of a 4 parallel circuit
+            try
+            {
+                double R1, R2, R3, R4, RT;
+                R1 = Convert.ToDouble(textBox27.Text);
+                R2 = Convert.ToDouble(textBox28.Text);
+                R3 = Convert.ToDouble(textBox29.Text);
+                R4 = Convert.ToDouble(textBox30.Text);
+                RT = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4);
+                Answer1 = "Total resistance = " + RT;
+                textBox26.Text = Answer1.ToString();
+
+            }
+            catch
+            {
+                MessageBox.Show("Type in 4 numbers");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //Calculate the total resistance of a 5 parallel circuit
+            try
+            {
+                double R1, R2, R3, R4, R5, RT;
+                R1 = Convert.ToDouble(textBox31.Text);
+                R2 = Convert.ToDouble(textBox32.Text);
+                R3 = Convert.ToDouble(textBox33.Text);
+                R4 = Convert.ToDouble(textBox34.Text);
+                R5 = Convert.ToDouble(textBox35.Text);
+                RT = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4 + 1 / R5);
+                Answer1 = "Total resistance = " + RT;
+                textBox36.Text = Answer1.ToString();
+
             }
             catch
             {
